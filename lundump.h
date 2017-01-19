@@ -19,7 +19,7 @@
 #define LUAC_NUM	cast_num(370.5)
 
 #define MYINT(s)	(s[0]-'0')
-#define LUAC_VERSION	(MYINT(LUA_VERSION_MAJOR)*16+MYINT(LUA_VERSION_MINOR))
+#define LUAC_VERSION	((MYINT(LUA_VERSION_MAJOR)<<4)+MYINT(LUA_VERSION_MINOR))
 #define LUAC_FORMAT	0	/* this is the official format */
 
 /* load one chunk; from lundump.c */
